@@ -10,5 +10,6 @@ for folder in folders:
     onlyfiles = [f for f in listdir(join(mypath, folder)) if isfile(join(mypath, folder, f))]
     for f in onlyfiles:
         shutil.move(join(mypath, folder, f), join(mypath, f))
+    shutil.rmtree(join(mypath, folder))
         
       
