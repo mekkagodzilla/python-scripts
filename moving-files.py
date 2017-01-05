@@ -1,8 +1,12 @@
+## Script used to go through folders in a directory, move files one folder up, 
+## and then delete the folders they were in
+## used to clean up the mess my camera does.
+
 import shutil
 from os import listdir
 from os.path import isfile, isdir, join
 
-mypath = input("Dans quel dossier sont les images ? ")
+mypath = input("Dans quel dossier sont les fichiers à remonter ? ")
 
 folders = [f for f in listdir(mypath) if isdir(join(mypath, f))]
 
