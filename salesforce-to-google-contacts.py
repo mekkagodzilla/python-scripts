@@ -9,7 +9,7 @@ import datetime
 # Let’s open our report csv file
     
 sourcefile = open('report.csv', 'r')
-sourcereader = csv.reader(sourcefile, delimiter=',', quotechar='"')
+sourcereader = csv.reader(sourcefile, delimiter=';', quotechar='"')
 
 # Let's open our template google contacts file
 
