@@ -14,7 +14,7 @@ sourcereader = csv.reader(sourcefile, delimiter=';', quotechar='"')
 
 # Let's open our template google contacts file
 
-exportfilename = 'contacts' + '_' + "-".join(str(datetime.datetime.now())[:-7]) + '.csv'
+exportfilename = 'contacts' + '_' + str(datetime.datetime.now())[:-7] + '.csv'
 contactsfile = open(exportfilename, 'w')
 contactswriter = csv.writer(contactsfile, delimiter=';', quotechar='"', quoting=csv.QUOTE_MINIMAL)
 
