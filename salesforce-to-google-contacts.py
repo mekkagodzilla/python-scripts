@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
 ## contact extracted from salesforce report and formated ready to import in google contacts
@@ -7,7 +7,7 @@ import csv
 import datetime
 
 # Let’s open our report csv file
-report = input("Quel est le report à traiter ?")
+report = input("Quel est le report à traiter ?\n")
     
 sourcefile = open(report, 'r')
 sourcereader = csv.reader(sourcefile, delimiter=';', quotechar='"')
