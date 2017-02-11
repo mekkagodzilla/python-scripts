@@ -26,11 +26,11 @@ firstline = True
 counter = 0
 
 def fix_number(phone_number):
-    #fix phone numbers that don't start with 0'
+    '''fix phone numbers that don't start with 0'''
     if phone_number.startswith('33'):
-        phone_number = "0" + phone_number[2:]
+        phone_number = '0' + phone_number[2:]
     elif phone_number.startswith('6') or phone_number.startswith('7') or phone_number.startswith('8') or phone_number.startswith('9'):
-        phone_number = "0" + phone_number
+        phone_number = '0' + phone_number
     return phone_number
 
 
