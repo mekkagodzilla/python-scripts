@@ -1,4 +1,3 @@
-#! python3
 # premier script pour manipuler du contenu html avec beautifulsoup.
 # objectif : sortir une liste de prats réservables sur pjd
 
