@@ -5,9 +5,14 @@
 
 import csv
 import datetime
+import sys
 
 # Let’s open our report csv file
-report = input("Quel est le report à traiter ?\n")
+#report = input("Quel est le report à traiter ?\n")
+reports = sys.argv
+
+report = reports[1]
+print(report)
     
 sourcefile = open(report, 'r')
 sourcereader = csv.reader(sourcefile, delimiter=';', quotechar='"')
