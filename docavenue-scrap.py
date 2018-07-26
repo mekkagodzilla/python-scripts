@@ -10,11 +10,12 @@ baseurl = 'https://www.docavenue.com'
 spes = ['medecins']
 
 departements = ['69',
-                '42',
+                '73',
                 '38',
                 '01',
                 '26',
                 '43',
+                '74',
                 ]
 
 
